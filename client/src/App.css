@@ -1,0 +1,218 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.forma{
+  margin-top: 40px;
+}
+
+.container{
+  max-width: 1280px;
+  margin:0 auto;
+  padding:0 10px;
+}
+
+form{
+  position: relative;
+}
+
+
+.forma form{
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin:0 auto;
+  background-color: rgb(232, 235, 235);
+  padding:10px;
+
+}
+
+.forma form input{
+ padding:7px 10px;
+ margin-bottom: 10px;
+ border:none;
+
+
+}
+
+.forma form  span{
+ letter-spacing: 0.1rem;
+ font-style: italic;
+ margin-bottom: 5px;
+ 
+ 
+ }
+
+ .btn button{
+   width: 100px;
+   padding:5px 5px;
+   background-color: rgb(179, 182, 182);
+   outline: none;
+   border: none;
+   font-size: 18px;
+   margin-top: 10px;
+   transition: all 0.3s ease-in-out;
+
+ }
+
+ .btn button:hover{
+ cursor: pointer;
+ background-color: gray;
+ color:white;
+}
+
+.items{
+  width:100%;
+
+}
+.incoming{
+  background: lightgray;
+  margin:0 auto;
+  margin-top: 30px;
+  width:350px;
+  
+
+}
+
+.incoming .textItem{
+  padding:10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.incoming .textItem p{
+ font-size: 18px;
+ font-style: italic;
+}
+
+.incoming .icons{
+  text-align: right;
+  box-shadow:0 0 3px 1px grey;
+}
+
+.incoming  i{
+  font-size:18px;
+  opacity:1;
+  margin: 10px;
+}
+.incoming  .fa-edit{
+  margin-right: 20px;
+  color:rgb(12, 177, 12);
+}
+
+.incoming  i:hover{
+  font-size:18px;
+  cursor: pointer;
+  opacity:0.8;
+}
+
+.incoming  .fa-trash{
+color: crimson;
+}
+
+.single .name,.single .email,.single .description {
+margin-bottom: 10px;
+  
+}
+
+.single span{
+text-decoration: underline;
+  color: crimson;
+  margin-bottom: 5px;
+  font-weight:400;
+  letter-spacing: 0.1rem;
+ 
+ 
+  
+}
+
+
+@media screen and (min-width:664px){
+
+
+ 
+
+  .items{
+    width:100%;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+ .items .incoming{
+   
+   flex:0 0 calc(50% - 10px)
+   
+  }
+}
+
+
+
+
+@media screen and (min-width:968px){
+
+
+ 
+
+  .items{
+    width:100%;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0;
+
+  }
+
+ .items .incoming{
+   
+   flex:0 0 calc(33.3% - 10px)
+   
+  }
+}
+
+
+.banner{
+  position:fixed;
+  background: gray;
+  top:0;
+  left:0;
+  right: 0;
+  left:0;
+  bottom:0;
+  opacity: 0.8;
+  display: none;
+}
+
+.newBanner{
+  display: block;
+}
+
+.closeBanner{
+  position: absolute;
+  top:0;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
